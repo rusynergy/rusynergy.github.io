@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Проекты rusynergy. Knotless — VPN-клиент для Windows на базе Xray-core.">
+  <title>Проекты · rusynergy</title>
+  <style>
+    * { box-sizing: border-box }
+    body { margin: 0; background: #f5f6ef; color: #1e291f; font: 1rem/1.55 "Segoe UI", system-ui, sans-serif }
+    header, main { width: min(1160px, 100%); margin: auto; padding: 1.5rem clamp(1rem, 4vw, 3rem) }
+    header { font-weight: 650; border-bottom: 1px solid #d7dbce }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.1; margin: .6em 0; letter-spacing: -.05em }
+    .project { display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 2rem; padding: clamp(1.6rem, 4vw, 3.6rem); border-radius: 1.3rem; background: #1d2d23; color: #f5f6ef; text-decoration: none }
+    .project:focus-visible { outline: 4px solid #568a32; outline-offset: 4px }
+    .project:hover .action { background: #dcffb6 }
+    h2 { font-size: clamp(2.6rem, 5vw, 4rem); letter-spacing: -.055em; line-height: 1.1; margin: .3em 0 }
+    p { color: #cfddce; max-width: 35ch; margin: .8em 0 1.6em }
+    .action { display: inline-block; padding: .7rem 1.1rem; border-radius: .6rem; background: #c5f297; color: #182418; font-weight: 650 }
+    .preview { width: 100%; border-radius: .65rem; border: 1px solid #526554 }
+    @media (max-width: 700px) { .project { grid-template-columns: 1fr } }
+  </style>
+</head>
+<body>
+  <header>rusynergy</header>
+  <main>
+    <h1>Проекты</h1>
+    <a class="project" href="/Knotless/" aria-label="Открыть сайт Knotless">
+      <div>
+        <img src="knotless.svg" width="44" height="44" alt="">
+        <h2>Knotless</h2>
+        <p>VPN-клиент для Windows с выбором версии Xray-core, режимом TUN и правилами маршрутизации в стиле RoutingA.</p>
+        <span class="action">Открыть сайт Knotless →</span>
+      </div>
+      <img class="preview" src="knotless-main.png" alt="Главное окно Knotless с тестовыми серверами">
+    </a>
+  </main>
+</body>
+</html>
